@@ -31,7 +31,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="50.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/login%20logo%20MSMS.png" />
+                  <Image url="@../images/login_logo_MSMS.png" />
                </image>
             </ImageView>
             <Label alignment="CENTER" layoutY="191.0" prefWidth="250.0" text="PHARMACY MANAGER" textFill="#0ac2b6" AnchorPane.leftAnchor="0.0">
