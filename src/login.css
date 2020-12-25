@@ -1,0 +1,13 @@
+.text-field{
+    -fx-background-radius: 9px;
+  -fx-text-box-border: #B22222;
+
+}
+.button{
+    -fx-background-radius:7px;
+
+}
+.button:hover{
+ -fx-background-radius: 9px;
+  -fx-background-color: yellow;
+}
