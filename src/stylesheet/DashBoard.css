@@ -1,0 +1,25 @@
+/****************BUTTON1***************/
+.button1 {
+	-fx-background-radius:0px 0px 7px 0px;
+    -fx-background-color:#747D8D;
+    -jfx-button-type: RAISED;
+}
+
+.button1:hover {
+	-fx-background-radius:0px 0px 7px 0px;
+    -fx-background-color: #121620;
+    -fx-text-fill: #ffffff;
+}
+
+/****************BUTTON2***************/
+.button2 {
+    -fx-background-color: #00A4AD;
+    -fx-background-radius: 7px 0px 7px 0px;
+    -jfx-button-type: RAISED;
+}
+
+.button2:hover {
+    -fx-background-color: #E3815E;
+    -fx-background-radius: 0px 7px 0px 7px;
+    -fx-text-fill: #ffffff;
+}
