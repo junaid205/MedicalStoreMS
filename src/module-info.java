@@ -8,6 +8,7 @@ module MedicalStore.MS {
     requires javafx.swt;
 
     opens main;
+    opens module1;
 
 
 }
