@@ -1,0 +1,73 @@
+/****************BUTTON1***************/
+.button1 {
+	-fx-background-radius:0px 0px 7px 0px;
+    -fx-background-color: #2E5AFF;
+    -jfx-button-type: RAISED;
+}
+
+.button1:hover {
+	-fx-background-radius:0px 0px 7px 0px;
+    -fx-background-color: #032CC8;
+    -fx-text-fill: #ffffff;
+}
+
+/****************BUTTON2***************/
+.button2 {
+    -fx-background-color: #00A4AD;
+    -fx-background-radius: 7px 0px 7px 0px;
+    -jfx-button-type: RAISED;
+}
+
+.button2:hover {
+    -fx-background-color: #E3815E;
+    -fx-background-radius: 0px 7px 0px 7px;
+    -fx-text-fill: #ffffff;
+}
+/****************BUTTON3***************/
+.button3 {
+    -fx-background-color: #A3B7FB;
+    -fx-background-radius: 7px 0px 7px 0px;
+    -jfx-button-type: RAISED;
+}
+
+.button3:hover {
+    -fx-background-color: #5E46F9;
+    -fx-background-radius: 0px 7px 0px 7px;
+    -fx-text-fill: #ffffff;
+}
+/****************BUTTON4 Search***************/
+.search_button {
+    -fx-background-color: #A3B7FB;
+    -fx-background-radius: 7px 7px 7px 7px;
+    -jfx-button-type: RAISED;
+}
+
+.search_button:hover {
+    -fx-background-color: #5E46F9;
+    -fx-background-radius: 7px 7px 7px 7px;
+    -fx-text-fill: #ffffff;
+}
+/****************BUTTON5 Default***************/
+.default_button {
+    -fx-background-color: #A3B7FB;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -jfx-button-type: RAISED;
+}
+
+.default_button:hover {
+    -fx-background-color: #5E46F9;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-text-fill: #ffffff;
+}
+/****************BUTTON6 Delete***************/
+.delete_button {
+    -fx-background-color: #A3B7FB;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -jfx-button-type: RAISED;
+}
+
+.delete_button:hover {
+    -fx-background-color: #FE2857;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-text-fill: #ffffff;
+}

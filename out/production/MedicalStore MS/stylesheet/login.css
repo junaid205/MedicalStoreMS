@@ -1,0 +1,23 @@
+.button1 {
+	-fx-background-radius:7px 0px 7px 0px;
+    -fx-background-color: #00A4AD;
+    -jfx-button-type: RAISED;
+}
+
+.button1:hover {
+	-fx-background-radius:0px 7px 0px 7px;
+    -fx-background-color: #E3815E;
+    -fx-text-fill: #ffffff;
+}
+
+
+.textfield {
+	-fx-background-radius:7px 7px 7px 7px;
+	-fx-background-color: #00A4AD;
+	-jfx-button-type: RAISED;
+}
+.textfield:hover {
+	-fx-background-radius:0px 0px 0px 0px;
+    -fx-background-color: #E3815E;
+    -fx-text-fill: #ffffff;
+}
