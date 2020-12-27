@@ -1,4 +1,4 @@
-package module1;
+package dashboard;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

@@ -21,7 +21,7 @@ public class Controller {
     }
 
     public void Login_Click() throws IOException {
-        Parent Layout = FXMLLoader.load(getClass().getResource("/module1/dashboard.fxml"));
+        Parent Layout = FXMLLoader.load(getClass().getResource("/dashboard/dashboard.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(Layout));
         stage.setMaximized(true);

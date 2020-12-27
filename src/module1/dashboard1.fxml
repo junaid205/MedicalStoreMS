@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="module1.dashboard1_controller" prefHeight="560.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox layoutX="14.0" layoutY="14.0" prefHeight="80.0" prefWidth="620.0" spacing="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0">
          <children>
