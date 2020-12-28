@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="allView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.dashboard_controller">
+<BorderPane fx:id="allView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_view.Main_View_Controller">
    <top>
       <AnchorPane prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #16C7E0;" BorderPane.alignment="CENTER">
          <children>
@@ -21,7 +21,7 @@
             </Label>
             <ImageView fitHeight="19.0" fitWidth="69.0" layoutX="877.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="11.0">
                <image>
-                  <Image url="@../images/iconfinder_power-off_1608429.png" />
+                  <Image url="@../images/LogOut.png" />
                </image>
             </ImageView>
             <TextField editable="false" layoutX="992.0" layoutY="8.0" prefHeight="25.0" prefWidth="163.0" AnchorPane.bottomAnchor="6.666666666666668" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="8.0" />
@@ -48,7 +48,7 @@
             </Label>
             <VBox layoutY="235.0" prefHeight="317.0" prefWidth="221.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#dashboard" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/DashBoard.css" text="Dashboard">
+                  <Button mnemonicParsing="false" onAction="#dashboard" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="Dashboard">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -56,7 +56,7 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/DashBoard.css" text="Purchase">
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="Purchase">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -65,7 +65,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button layoutX="10.0" layoutY="45.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/DashBoard.css" text="Sale">
+                  <Button layoutX="10.0" layoutY="45.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="Sale">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>

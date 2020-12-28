@@ -14,11 +14,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="560.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module1.Dashboard_Controller">
    <children>
       <HBox layoutX="14.0" layoutY="14.0" prefHeight="80.0" prefWidth="620.0" spacing="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0">
          <children>
-            <Pane prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #00CA87;">
+            <Pane onMouseClicked="#Medicines" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #00CA87; -fx-background-radius: 12;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Mediciens" textFill="WHITE">
                      <font>
@@ -37,7 +37,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #4B6AC4;">
+            <Pane layoutX="10.0" layoutY="10.0" onMouseClicked="#SaleOfDay" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #4B6AC4; -fx-background-radius: 12;" styleClass="pane2" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Sales of Day" textFill="WHITE">
                      <font>
@@ -46,7 +46,7 @@
                   </Label>
                   <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="230.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/sales%20of%20day.png" />
+                        <Image url="@../images/SaleOfday.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="14.0" layoutY="50.0" text="Reports" textFill="WHITE">
@@ -56,7 +56,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="210.0" layoutY="10.0" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #7AF948;">
+            <Pane layoutX="210.0" layoutY="10.0" onMouseClicked="#SaleOfMonth" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #7AF948; -fx-background-radius: 12;" styleClass="pane3" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Sales of Month" textFill="WHITE">
                      <font>
@@ -65,7 +65,7 @@
                   </Label>
                   <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="230.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/sales%20of%20month.png" />
+                        <Image url="@../images/SaleOfMonth.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="14.0" layoutY="50.0" text="Reports" textFill="WHITE">
@@ -79,7 +79,7 @@
       </HBox>
       <HBox layoutX="14.0" layoutY="104.0" prefHeight="80.0" prefWidth="620.0" spacing="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="104.0">
          <children>
-            <Pane prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #E79A61;">
+            <Pane onMouseClicked="#StockStorage" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #E79A61; -fx-background-radius: 12;" styleClass="pane4" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="8.0" layoutY="13.0" text="Stock Storage" textFill="WHITE">
                      <font>
@@ -88,7 +88,7 @@
                   </Label>
                   <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="235.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Stock%20Storage.png" />
+                        <Image url="@../images/StockStorage.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="17.0" layoutY="51.0" text="Reports" textFill="WHITE">
@@ -98,7 +98,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #AF67AE;">
+            <Pane layoutX="10.0" layoutY="10.0" onMouseClicked="#ExpiredProducts" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #AF67AE; -fx-background-radius: 12;" styleClass="pane5" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Expired Products" textFill="WHITE">
                      <font>
@@ -107,7 +107,7 @@
                   </Label>
                   <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="236.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Expired%20Products.png" />
+                        <Image url="@../images/ExpiredProducts.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="14.0" layoutY="50.0" text="Reports" textFill="WHITE">
@@ -117,16 +117,16 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="210.0" layoutY="10.0" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #36E1D7;">
+            <Pane layoutX="210.0" layoutY="10.0" onMouseClicked="#NearExpiry" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #36E1D7; -fx-background-radius: 12;" styleClass="pane6" stylesheets="@../stylesheet/Pane_Button.css">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Near Expiry" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="230.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="231.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Near%20to%20Expiary.png" />
+                        <Image url="@../images/NearToExpiary.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="14.0" layoutY="50.0" text="Reports" textFill="WHITE">
@@ -191,7 +191,7 @@
                            </font>
                         </Label>
                         <TextField layoutX="771.0" layoutY="3.0" prefHeight="30.0" prefWidth="338.0" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0" />
-                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/DashBoard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/Dashboard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                               <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -204,7 +204,7 @@
                            <children>
                               <HBox layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="412.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Update">
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Update">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -216,7 +216,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/DashBoard.css" text="Delete">
+                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/Dashboard.css" text="Delete">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -228,7 +228,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Create">
+                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Create">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -264,7 +264,7 @@
                            </font>
                         </Label>
                         <TextField layoutX="771.0" layoutY="3.0" prefHeight="30.0" prefWidth="338.0" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0" />
-                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/DashBoard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/Dashboard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                               <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -277,7 +277,7 @@
                            <children>
                               <HBox layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="412.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Update">
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Update">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -289,7 +289,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/DashBoard.css" text="Delete">
+                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/Dashboard.css" text="Delete">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -301,7 +301,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Create">
+                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Create">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -337,7 +337,7 @@
                            </font>
                         </Label>
                         <TextField layoutX="771.0" layoutY="3.0" prefHeight="30.0" prefWidth="338.0" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0" />
-                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/DashBoard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/Dashboard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                               <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -350,7 +350,7 @@
                            <children>
                               <HBox layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="412.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Update">
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Update">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -362,7 +362,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/DashBoard.css" text="Delete">
+                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/Dashboard.css" text="Delete">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -374,7 +374,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Create">
+                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Create">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -410,7 +410,7 @@
                            </font>
                         </Label>
                         <TextField layoutX="771.0" layoutY="3.0" prefHeight="30.0" prefWidth="338.0" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0" />
-                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/DashBoard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                        <Button layoutX="868.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" styleClass="search_button" stylesheets="@../stylesheet/Dashboard.css" text="Search" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                               <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -423,7 +423,7 @@
                            <children>
                               <HBox layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="412.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Update">
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Update">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -435,7 +435,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/DashBoard.css" text="Delete">
+                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="delete_button" stylesheets="@../stylesheet/Dashboard.css" text="Delete">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>
@@ -447,7 +447,7 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/DashBoard.css" text="Create">
+                                    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" styleClass="default_button" stylesheets="@../stylesheet/Dashboard.css" text="Create">
                                        <font>
                                           <Font name="Bell MT Bold" size="15.0" />
                                        </font>

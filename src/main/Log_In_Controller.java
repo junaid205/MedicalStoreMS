@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Controller {
+public class Log_In_Controller {
 
     @FXML
     public Button login_btn;
@@ -21,7 +21,7 @@ public class Controller {
     }
 
     public void Login_Click() throws IOException {
-        Parent Layout = FXMLLoader.load(getClass().getResource("/dashboard/dashboard.fxml"));
+        Parent Layout = FXMLLoader.load(getClass().getResource("/main_view/Main_View.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(Layout));
         stage.setMaximized(true);

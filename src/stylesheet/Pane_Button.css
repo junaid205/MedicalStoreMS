@@ -1,0 +1,18 @@
+.pane1:hover {
+	-fx-background-color: #008D5E !important;
+}
+.pane2:hover {
+	-fx-background-color: #374E91 !important;
+}
+.pane3:hover {
+	-fx-background-color: #61C539 !important;
+}
+.pane4:hover {
+	-fx-background-color: #B3784B !important;
+}
+.pane5:hover {
+	-fx-background-color: #7C487B !important;
+}
+.pane6:hover {
+	-fx-background-color: #29AEA6 !important;
+}
