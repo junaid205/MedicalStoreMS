@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Main_View_Controller implements Initializable {
+public class Main_View_Controller  {
     public BorderPane allView;
     @FXML
 
