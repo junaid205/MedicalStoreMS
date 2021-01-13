@@ -84,7 +84,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Purchase">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" onAction="#Purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Purchase">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -96,7 +96,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Stock">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Stock">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -108,7 +108,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="151.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Report">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="151.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Report">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -120,7 +120,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="187.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Supplier">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Supplier">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -132,7 +132,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="222.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Search">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="222.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Search">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -144,7 +144,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="257.0" mnemonicParsing="false" onAction="#purchase" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Setting">
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="257.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="223.0" styleClass="button1" stylesheets="@../stylesheet/Dashboard.css" text="   Setting">
                      <graphic>
                         <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -192,7 +192,7 @@
                   </AnchorPane>
                   <HBox layoutY="254.0" prefHeight="130.0" prefWidth="950.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="95.0">
                      <children>
-                        <AnchorPane prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
+                        <AnchorPane onMouseClicked="#Medicine" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
                            <children>
                               <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                                  <font>

@@ -26,18 +26,19 @@ public class Main_View_Controller implements Initializable {
         allView.setCenter(pane);
     }
 
-    public void purchase(ActionEvent actionEvent) throws IOException {
-        Parent pane = FXMLLoader.load(getClass().getResource("/module3/Customer.fxml"));
+    public void Medicine(ActionEvent actionEvent) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
         allView.setCenter(pane);
     }
 
-    public void Medicine(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
+
+
+    public void Purchase(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module4/Purchase.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(layout));
         stage.setMaximized(true);
-        stage.setTitle("Medicine");
+        stage.setTitle("Purchase");
         stage.show();
-
     }
 }
