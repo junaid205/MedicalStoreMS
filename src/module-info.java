@@ -10,7 +10,7 @@ module MedicalStore.MS {
     opens main;
     opens main_view;
     opens module1;
-    opens module2;
+    opens module3;
 
 
 

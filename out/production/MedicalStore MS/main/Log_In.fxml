@@ -26,17 +26,14 @@
                         <Image url="@../images/login_logo_MSMS.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER" layoutY="130.0" prefHeight="30.0" prefWidth="350.0" text="Helix Care Pharmacy Management">
+                  <Label alignment="CENTER" layoutY="130.0" prefHeight="30.0" prefWidth="350.0" text="IDEAL Pharmacy Management">
                      <font>
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="25.0" layoutY="175.0" prefHeight="30.0" prefWidth="300.0" promptText="Email/Username" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <PasswordField layoutX="25.0" layoutY="215.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <Button fx:id="login_btn" layoutX="125.0" layoutY="270.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="100.0" styleClass="button2" stylesheets="@../stylesheet/Dashboard.css" text="LOG IN">
-                     <font>
-                        <Font name="Bell MT Bold" size="14.0" />
-                     </font></Button>
+                  <TextField layoutX="25.0" layoutY="175.0" prefHeight="30.0" prefWidth="300.0" promptText="Email/Username" />
+                  <PasswordField layoutX="25.0" layoutY="215.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" />
+                  <Button fx:id="login_btn" layoutX="125.0" layoutY="270.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="100.0" text="LOG IN" />
                </children>
             </Pane>
          </children>

@@ -5,16 +5,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import main_view.Main_View_Controller;
 
 import java.io.IOException;
 
-public class Dashboard_Controller {
+public class Dashboard_Controller extends Main_View_Controller {
 
 
     public void Medicines(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/Medicines.fxml"));
+        Parent layout = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
         Stage stage = new Stage();
         stage.setScene(new Scene(layout));
+        stage.setMaximized(true);
         stage.show();
     }
     public void SaleOfDay(MouseEvent mouseEvent) throws IOException {

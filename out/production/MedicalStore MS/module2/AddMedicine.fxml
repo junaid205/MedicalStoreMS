@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: green; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.AddMedicine_Controller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="496.0" prefWidth="796.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 10;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Button fx:id="Exit_Btn" layoutX="311.0" layoutY="428.0" mnemonicParsing="false" onAction="#Close" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Close" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="430.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="91.0" layoutY="428.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Save" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="430.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Manage.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="29.0" text="Medicine">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="62.0" text="Add Medicines">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Box depth="100" height="20.0" layoutX="411.0" layoutY="65.0" width="215.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+            <Label layoutX="307.0" layoutY="55.0" text="Home / Medicines / Add Medicine" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="20.0" layoutY="107.0" prefHeight="284.0" prefWidth="175.0" spacing="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label prefWidth="200.0" text="Barcode OR QRcode">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Strength">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Box Size">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Medicine Shelf">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Category">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Tex">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="147.0" prefWidth="200.0" text="Manufacturer Price">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="191.0" layoutY="109.0" prefHeight="280.0" prefWidth="200.0" spacing="15.0" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <TextField prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="10.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="55.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="101.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="146.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="191.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="237.0" prefHeight="30.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="402.0" layoutY="107.0" prefHeight="284.0" prefWidth="163.0" spacing="15.0" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label prefWidth="200.0" text="Medicine Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Generic Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Unit">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Medicine Type">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Sell Price">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Manufacturer">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="147.0" prefWidth="200.0" text="Details">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="559.0" layoutY="109.0" prefHeight="395.0" prefWidth="233.0" spacing="12.0" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <TextField prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="10.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="55.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="101.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="146.0" prefHeight="30.0" />
+            <TextField layoutX="10.0" layoutY="191.0" prefHeight="30.0" />
+            <TextArea prefHeight="140.0" prefWidth="233.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
