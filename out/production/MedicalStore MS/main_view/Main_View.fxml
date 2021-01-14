@@ -164,161 +164,157 @@
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="-4.0" prefHeight="560.0" prefWidth="955.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Manage.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="32.0" text="Dashboard">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="62.0" text="Home">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Dashboard" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox layoutY="95.0" prefHeight="130.0" prefWidth="950.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="95.0">
+               <children>
+                  <AnchorPane prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
-                        <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/Manage.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="84.0" layoutY="32.0" text="Dashboard">
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
-                              <Font name="Bell MT Bold" size="30.0" />
+                              <Font name="System Bold" size="28.0" />
                            </font>
                         </Label>
-                        <Label layoutX="86.0" layoutY="62.0" text="Home">
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Medicine" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <font>
-                              <Font name="Bell MT Bold" size="16.0" />
+                              <Font name="Arial Bold" size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Dashboard" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Medicine" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="System Bold" size="17.0" />
                            </font>
                         </Label>
                      </children>
                   </AnchorPane>
-                  <HBox layoutY="254.0" prefHeight="130.0" prefWidth="950.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="95.0">
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6B9B4E; -fx-background-radius: 5;" styleClass="pane2" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
-                        <AnchorPane onMouseClicked="#Medicine" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-                                 <font>
-                                    <Font name="System Bold" size="28.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Medicine" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Medicine" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="System Bold" size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6B9B4E; -fx-background-radius: 5;" styleClass="pane2" stylesheets="@../stylesheet/Pane_Button.css">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="002" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-                                 <font>
-                                    <Font name="System Bold" size="28.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Customer" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Customer" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="System Bold" size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="220.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F3CE54; -fx-background-radius: 5;" styleClass="pane3" stylesheets="@../stylesheet/Pane_Button.css">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="003" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-                                 <font>
-                                    <Font name="System Bold" size="28.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Out of Stock" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Out of Stock" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="System Bold" size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="430.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F28E80; -fx-background-radius: 5;" styleClass="pane4" stylesheets="@../stylesheet/Pane_Button.css">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="004" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-                                 <font>
-                                    <Font name="System Bold" size="28.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Expired" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Expired" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="System Bold" size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="640.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6FAAC1; -fx-background-radius: 5;" styleClass="pane6" stylesheets="@../stylesheet/Pane_Button.css">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-                                 <font>
-                                    <Font name="System Bold" size="28.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Invoice" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Invoice" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="System Bold" size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <AnchorPane layoutX="7.0" layoutY="231.0" prefHeight="337.0" prefWidth="600.0" style="-fx-background-color: #34C1FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="230.0">
-                     <children>
-                        <TableView layoutX="7.0" prefHeight="303.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
-                        </TableView>
-                        <Label alignment="CENTER" layoutX="242.0" layoutY="6.0" prefHeight="35.0" prefWidth="600.0" text="PRODUCTS WITH LOW STOCK" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="002" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
-                              <Font name="Bell MT Bold" size="21.0" />
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Customer" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Customer" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
                            </font>
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="608.0" layoutY="230.0" prefHeight="330.0" prefWidth="343.0" style="-fx-background-color: #45FFFE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="603.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="230.0">
+                  <AnchorPane layoutX="220.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F3CE54; -fx-background-radius: 5;" styleClass="pane3" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
-                        <TableView layoutX="7.0" prefHeight="295.0" prefWidth="348.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
-                           <columns>
-                              <TableColumn prefWidth="75.0" text="C1" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                           </columns>
-                        </TableView>
-                        <Label alignment="CENTER" layoutX="242.0" layoutY="6.0" prefHeight="35.0" prefWidth="340.0" text="Today Report" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="003" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
-                              <Font name="Bell MT Bold" size="21.0" />
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Out of Stock" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Out of Stock" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
                            </font>
                         </Label>
                      </children>
                   </AnchorPane>
+                  <AnchorPane layoutX="430.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F28E80; -fx-background-radius: 5;" styleClass="pane4" stylesheets="@../stylesheet/Pane_Button.css">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="004" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Expired" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Expired" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="640.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6FAAC1; -fx-background-radius: 5;" styleClass="pane6" stylesheets="@../stylesheet/Pane_Button.css">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="65.0" prefHeight="20.0" prefWidth="160.0" text="Total Invoice" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="86.0" prefHeight="25.0" prefWidth="160.0" text="Invoice" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane layoutY="230.0" prefHeight="337.0" prefWidth="600.0" style="-fx-background-color: #34C1FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="230.0">
+               <children>
+                  <TableView layoutX="7.0" prefHeight="303.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="242.0" layoutY="6.0" prefHeight="35.0" prefWidth="600.0" text="PRODUCTS WITH LOW STOCK" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="603.0" layoutY="230.0" prefHeight="330.0" prefWidth="343.0" style="-fx-background-color: #45FFFE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="603.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="230.0">
+               <children>
+                  <TableView layoutX="7.0" prefHeight="295.0" prefWidth="348.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="C1" />
+                        <TableColumn prefWidth="75.0" text="C2" />
+                     </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="242.0" layoutY="6.0" prefHeight="35.0" prefWidth="340.0" text="Today Report" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </children></AnchorPane>
