@@ -31,14 +31,38 @@ public class Main_View_Controller  {
         allView.setCenter(pane);
     }
 
-
+    public void Customer(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module3/Customer.fxml"));
+        allView.setCenter(layout);
+    }
 
     public void Purchase(ActionEvent actionEvent) throws IOException {
         Parent layout = FXMLLoader.load(getClass().getResource("/module4/Purchase.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.setMaximized(true);
-        stage.setTitle("Purchase");
-        stage.show();
+        allView.setCenter(layout);
+    }
+
+    public void Stock(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module5/Stock.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void Report(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module6/Report.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void Supplier(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module7/Supplier.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void Search(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module8/Search.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void Setting(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module9/Setting.fxml"));
+        allView.setCenter(layout);
     }
 }

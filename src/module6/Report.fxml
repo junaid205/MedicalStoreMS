@@ -15,17 +15,17 @@
                   <Image url="@../images/Manage.png" />
                </image>
             </ImageView>
-            <Label layoutX="84.0" layoutY="32.0" text="Medicines">
+            <Label layoutX="84.0" layoutY="32.0" text="Report">
                <font>
                   <Font name="Bell MT Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="86.0" layoutY="62.0" text="Manage Medicines">
+            <Label layoutX="86.0" layoutY="62.0" text="Manage Report">
                <font>
                   <Font name="Bell MT Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Dashboard" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+            <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Report" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
