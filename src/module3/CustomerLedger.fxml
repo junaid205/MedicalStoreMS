@@ -11,28 +11,28 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module3.Customer_Controller">
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module3.CustomerLedger_Controller">
    <center>
       <AnchorPane prefHeight="560.0" prefWidth="955.0">
          <children>
             <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="60.0" fitWidth="58.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/Customer.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="84.0" layoutY="32.0" text="Customer">
+                  <Label layoutX="84.0" layoutY="32.0" text="Customer Ladger">
                      <font>
                         <Font name="Bell MT Bold" size="30.0" />
                      </font>
                   </Label>
-                  <Label layoutX="86.0" layoutY="62.0" text="Manage Customer">
+                  <Label layoutX="86.0" layoutY="62.0" text="Manage Customer Ledger">
                      <font>
                         <Font name="Bell MT Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Customer" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Customer / Customer Ledger" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -41,12 +41,7 @@
             </AnchorPane>
             <HBox layoutX="7.0" layoutY="90.0" prefHeight="30.0" prefWidth="955.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#AddCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Add Customer" textFill="#fff600">
-                     <font>
-                        <Font name="Bell MT Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button mnemonicParsing="false" onAction="#CustomerLedger" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Customer Ledger" textFill="#fff600">
+                  <Button mnemonicParsing="false" onAction="#ManageCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Customer" textFill="#fff600">
                      <font>
                         <Font name="Bell MT Bold" size="14.0" />
                      </font>
@@ -63,7 +58,7 @@
                   </Button>
                </children>
             </HBox>
-            <Label layoutY="120.0" prefHeight="40.0" prefWidth="955.0" text="List of Customers" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0">
+            <Label layoutY="120.0" prefHeight="40.0" prefWidth="955.0" text="List of Customer Ledger" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0">
                <font>
                   <Font name="Bell MT Bold" size="36.0" />
                </font>

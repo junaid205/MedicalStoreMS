@@ -11,19 +11,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.AddMedicine_Controller">
    <center>
       <AnchorPane prefHeight="560.0" prefWidth="955.0">
          <children>
             <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Manage.png" />
+                        <Image url="@../images/Medicine.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="84.0" layoutY="29.0" text="Medicine">
+                  <Label layoutX="84.0" layoutY="29.0" text="Add Medicine">
                      <font>
                         <Font name="Bell MT Bold" size="30.0" />
                      </font>

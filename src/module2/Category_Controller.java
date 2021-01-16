@@ -6,20 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 
-
 import java.io.IOException;
 
-public class Medicines_Controller {
+public class Category_Controller {
     @FXML
     private BorderPane AllView;
 
-    public void AddMedicine(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module2/AddMedicine.fxml"));
-        AllView.setCenter(layout);
-    }
-
-    public void ManageCategory(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module2/Category.fxml"));
+    public void ManageMedicine(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
         AllView.setCenter(layout);
     }
 

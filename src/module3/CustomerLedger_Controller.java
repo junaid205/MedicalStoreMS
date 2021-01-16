@@ -8,17 +8,12 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
-public class Customer_Controller {
+public class CustomerLedger_Controller {
     @FXML
     private BorderPane AllView;
 
-    public void AddCustomer(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module3/AddCustomer.fxml"));
-        AllView.setCenter(layout);
-    }
-
-    public void CustomerLedger(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module3/CustomerLedger.fxml"));
+    public void ManageCustomer(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module3/Customer.fxml"));
         AllView.setCenter(layout);
     }
 

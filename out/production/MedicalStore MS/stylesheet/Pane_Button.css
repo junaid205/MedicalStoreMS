@@ -40,3 +40,16 @@
     -fx-background-color: #00DA00;
     -fx-text-fill: #ffffff;
 }
+
+
+
+.button_customer {
+	-fx-background-radius:3px 3px 3px 3px;
+	-jfx-button-type: RAISED;
+	-fx-background-color: #324687;
+}
+.button_customer:hover {
+	-fx-background-radius:3px 3px 3px 3px;
+    -fx-background-color: #4E6CD3;
+    -fx-text-fill: #ffffff;
+}

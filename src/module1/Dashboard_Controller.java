@@ -1,52 +1,35 @@
 package module1;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
-import main_view.Main_View_Controller;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
-public class Dashboard_Controller extends Main_View_Controller {
+public class Dashboard_Controller {
+    @FXML
+    private BorderPane AllView;
 
-
-    public void Medicines(MouseEvent mouseEvent) throws IOException {
+    public void TotalMedicine(MouseEvent mouseEvent) throws IOException {
         Parent layout = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.setMaximized(true);
-        stage.show();
+        AllView.setCenter(layout);
     }
-    public void SaleOfDay(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/SaleOfDay.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.show();
+
+    public void TotalCustomer(MouseEvent mouseEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module3/Customer.fxml"));
+        AllView.setCenter(layout);
     }
-    public void SaleOfMonth(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/SaleOfMonth.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.show();
+
+    public void OutOfStock(MouseEvent mouseEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module5/Stock.fxml"));
+        AllView.setCenter(layout);
     }
-    public void StockStorage(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/StockStorage.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.show();
+
+    public void Expired(MouseEvent mouseEvent) {
     }
-    public void ExpiredProducts(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/ExpiredProducts.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.show();
-    }
-    public void NearExpiry(MouseEvent mouseEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module1/NearToExpiry.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(layout));
-        stage.show();
+
+    public void Invoice(MouseEvent mouseEvent) {
     }
 }

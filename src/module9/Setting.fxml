@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="560.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module9.Setting_Controller">
    <children>
       <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/Manage.png" />
+                  <Image url="@../images/settings.png" />
                </image>
             </ImageView>
             <Label layoutX="84.0" layoutY="32.0" text="Setting">
@@ -32,5 +35,95 @@
             </Label>
          </children>
       </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="90.0" prefHeight="30.0" prefWidth="955.0" text="Change Password" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="278.0" layoutY="120.0" prefHeight="137.0" prefWidth="200.0" spacing="5.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="515.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="200.0" text="Email">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" text="Current Password">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="40.0" prefHeight="30.0" prefWidth="200.0" text="New Password">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="70.0" prefHeight="30.0" prefWidth="200.0" text="Confirm Password">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="397.0" layoutY="120.0" prefHeight="137.0" prefWidth="408.0" spacing="5.0" AnchorPane.leftAnchor="397.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <TextField prefHeight="30.0" promptText="Email" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="10.0" prefHeight="30.0" promptText="Current Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="40.0" prefHeight="30.0" promptText="New Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="70.0" prefHeight="30.0" promptText="Confirm Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="312.0" prefHeight="30.0" prefWidth="955.0" text="Add New User" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="240.0" layoutY="342.0" prefHeight="171.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="200.0" text="First Name">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" text="Last Name">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="40.0" prefHeight="30.0" prefWidth="200.0" text="Email">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="70.0" prefHeight="30.0" prefWidth="200.0" text="Password">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="116.0" prefHeight="30.0" prefWidth="200.0" text="Confirm Password">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="397.0" layoutY="342.0" prefHeight="179.0" prefWidth="408.0" spacing="5.0">
+         <children>
+            <TextField prefHeight="30.0" promptText="First Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="10.0" prefHeight="30.0" promptText="Last Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="40.0" prefHeight="30.0" promptText="Email" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="70.0" prefHeight="30.0" promptText="Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+            <TextField layoutX="10.0" layoutY="116.0" prefHeight="30.0" promptText="Confirm Password" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+         </children>
+      </VBox>
+      <Button layoutX="336.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="284.0" styleClass="button2" stylesheets="@../stylesheet/Dashboard.css" text="Apply Settings">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="336.0" layoutY="524.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="284.0" styleClass="button2" stylesheets="@../stylesheet/Dashboard.css" text="Apply Settings">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

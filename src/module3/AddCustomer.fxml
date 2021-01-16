@@ -11,28 +11,28 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.AddMedicine_Controller">
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module3.AddCustomer_Controller">
    <center>
       <AnchorPane prefHeight="560.0" prefWidth="955.0">
          <children>
             <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="62.0" fitWidth="59.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Medicine.png" />
+                        <Image url="@../images/Customer.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="84.0" layoutY="29.0" text="Add Medicine">
+                  <Label layoutX="84.0" layoutY="29.0" text="Add Customer">
                      <font>
                         <Font name="Bell MT Bold" size="30.0" />
                      </font>
                   </Label>
-                  <Label layoutX="84.0" layoutY="62.0" text="Add Medicines">
+                  <Label layoutX="84.0" layoutY="62.0" text="Add Customer">
                      <font>
                         <Font name="Bell MT Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="743.0" layoutY="70.0" text="Home / Medicines / Add Medicine" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
+                  <Label layoutX="743.0" layoutY="70.0" text="Home / Customer / Add Customer" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -41,37 +41,37 @@
             </AnchorPane>
             <VBox layoutY="140.0" prefHeight="280.0" prefWidth="170.0" spacing="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="140.0">
                <children>
-                  <Label prefWidth="200.0" text="Barcode OR QRcode">
+                  <Label prefWidth="200.0" text="Customer Name">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Strength">
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Father Name">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Box Size">
+                  <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Customer Email">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Medicine Shelf">
+                  <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Email Address">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Category">
+                  <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Customer Mobile">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Tex">
+                  <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Phone">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label prefWidth="200.0" text="Manufacturer Price">
+                  <Label prefWidth="200.0" text="Contact">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -85,32 +85,32 @@
             </VBox>
             <VBox layoutX="603.0" layoutY="140.0" prefHeight="280.0" prefWidth="170.0" spacing="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="143.0">
                <children>
-                  <Label prefWidth="200.0" text="Medicine Name">
+                  <Label prefWidth="200.0" text="City">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Generic Name">
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="State">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Unit">
+                  <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Zip Code">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Medicine Type">
+                  <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Address 1">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Sell Price">
+                  <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Address 2">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Manufacturer">
+                  <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Country">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -122,17 +122,17 @@
                   </Label>
                </children>
             </VBox>
-            <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageMedicine" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Medicine" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+            <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Customer" textFill="#e6ff00" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
             </Button>
             <VBox layoutX="194.0" layoutY="180.0" prefHeight="246.0" prefWidth="319.0" spacing="10.0" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="140.0">
                <children>
-                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Barcode or QR Code" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Strength" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <TextField layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="294.0" promptText="Box Size" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <TextField layoutX="10.0" layoutY="61.0" prefHeight="25.0" prefWidth="294.0" promptText="Medicine Shelf" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Customer Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Father Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="294.0" promptText="Customer Email" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="61.0" prefHeight="25.0" prefWidth="294.0" promptText="Email Address" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="86.0" prefHeight="25.0" prefWidth="294.0" promptText="Category" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="111.0" prefHeight="25.0" prefWidth="294.0" promptText="Tex" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="137.0" prefHeight="25.0" prefWidth="294.0" promptText="Manufacturer Price" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
@@ -140,9 +140,9 @@
             </VBox>
             <VBox layoutX="614.0" layoutY="141.0" prefHeight="237.0" prefWidth="327.0" spacing="10.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="140.0">
                <children>
-                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Medicine Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Generic Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
-                  <TextField layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="294.0" promptText="Unit" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="City" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="State" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="294.0" promptText="Zip Code" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="61.0" prefHeight="25.0" prefWidth="294.0" promptText="Medicine Type" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="86.0" prefHeight="25.0" prefWidth="294.0" promptText="Sell Price" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
                   <TextField layoutX="10.0" layoutY="111.0" prefHeight="25.0" prefWidth="294.0" promptText="Manufacturer" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />

@@ -8,12 +8,12 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
-public class Purchase_Controller {
+public class AddPurchase_Controller {
     @FXML
     private BorderPane AllView;
 
-    public void AddPurchase(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module4/AddPurchase.fxml"));
+    public void ManagePurchase(ActionEvent actionEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module4/Purchase.fxml"));
         AllView.setCenter(layout);
     }
 }

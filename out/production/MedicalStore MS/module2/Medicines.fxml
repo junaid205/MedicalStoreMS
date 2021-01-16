@@ -10,16 +10,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.Medicines_Controller">
    <center>
       <AnchorPane prefHeight="560.0" prefWidth="955.0" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/Manage.png" />
+                        <Image url="@../images/Medicine.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="84.0" layoutY="32.0" text="Medicines">
@@ -78,6 +77,30 @@
                   </Button>
                </children>
             </AnchorPane>
+            <Button layoutX="157.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageCategory" prefHeight="30.0" prefWidth="165.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Catagory">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="329.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Add Catagory">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </center>

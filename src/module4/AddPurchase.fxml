@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module4.AddPurchase_Controller">
+   <center>
+      <AnchorPane prefHeight="560.0" prefWidth="955.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Purchase.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="29.0" text="Add Purchase">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="62.0" text="Manage Purchase">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="743.0" layoutY="70.0" text="Purchase / Add Purchase" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox layoutY="140.0" prefHeight="88.0" prefWidth="170.0" spacing="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <Label prefWidth="200.0" text="Manufacturer">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Invoice No">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="200.0" text="Details Description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="603.0" layoutY="140.0" prefHeight="66.0" prefWidth="170.0" spacing="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="143.0">
+               <children>
+                  <Label prefWidth="200.0" text="Purchase Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Payment Type">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManagePurchase" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Purchase" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <VBox layoutX="194.0" layoutY="180.0" prefHeight="65.0" prefWidth="319.0" spacing="10.0" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Manufacturer" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Invoice No" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+               </children>
+            </VBox>
+            <VBox layoutX="614.0" layoutY="141.0" prefHeight="62.0" prefWidth="327.0" spacing="10.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Purchase Date" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Payment Type" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+               </children>
+            </VBox>
+            <TextArea layoutX="175.0" layoutY="210.0" prefHeight="219.0" prefWidth="772.0" promptText="Description" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="210.0" />
+            <Button layoutX="781.0" layoutY="512.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="button3" stylesheets="@../stylesheet/Dashboard.css" text="Save" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

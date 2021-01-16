@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.AddCategory_Controller">
+   <center>
+      <AnchorPane prefHeight="560.0" prefWidth="955.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Medicine.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="29.0" text="Add Category">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="62.0" text="Add Category">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="743.0" layoutY="70.0" text="Medicine / Category / Add Category" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox layoutY="140.0" prefHeight="280.0" prefWidth="170.0" spacing="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <Label prefWidth="200.0" text="Category Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="Supplier Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="37.0" prefWidth="200.0" text="Quantity">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="65.0" prefWidth="200.0" text="Manufacturer Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="92.0" prefWidth="200.0" text="Expiry Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="119.0" prefWidth="200.0" text="Tex">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="200.0" text="Details Description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageCategory" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Category" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <VBox layoutX="140.0" layoutY="152.0" prefHeight="218.0" prefWidth="807.0" spacing="10.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="294.0" promptText="Category Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="294.0" promptText="Supplier Name" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="294.0" promptText="Quantity" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="61.0" prefHeight="25.0" prefWidth="294.0" promptText="Manufacturer Date" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="86.0" prefHeight="25.0" prefWidth="294.0" promptText="Expiry Date" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+                  <TextField layoutX="10.0" layoutY="111.0" prefHeight="25.0" prefWidth="294.0" promptText="Tex" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" />
+               </children>
+            </VBox>
+            <TextArea layoutX="172.0" layoutY="358.0" prefHeight="118.0" prefWidth="808.0" promptText="Description" styleClass="text-field" stylesheets="@../stylesheet/Dashboard.css" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="350.0" />
+            <Button layoutX="781.0" layoutY="512.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="button3" stylesheets="@../stylesheet/Dashboard.css" text="Save" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="159.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageMedicine" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Medicine">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -3,12 +3,9 @@ package main_view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -57,12 +54,33 @@ public class Main_View_Controller  {
     }
 
     public void Search(ActionEvent actionEvent) throws IOException {
-        Parent layout = FXMLLoader.load(getClass().getResource("/module8/Search.fxml"));
+        Parent layout = FXMLLoader.load(getClass().getResource("/module8/SearchMedicine.fxml"));
         allView.setCenter(layout);
     }
 
     public void Setting(ActionEvent actionEvent) throws IOException {
         Parent layout = FXMLLoader.load(getClass().getResource("/module9/Setting.fxml"));
         allView.setCenter(layout);
+    }
+
+    public void TotalMedicine(MouseEvent mouseEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module2/Medicines.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void TotalCustomer(MouseEvent mouseEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module3/Customer.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void OutOfStock(MouseEvent mouseEvent) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("/module5/Stock.fxml"));
+        allView.setCenter(layout);
+    }
+
+    public void Expired(MouseEvent mouseEvent) {
+    }
+
+    public void Invoice(MouseEvent mouseEvent) {
     }
 }

@@ -10,55 +10,43 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.Medicines_Controller">
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module2.Category_Controller">
    <center>
       <AnchorPane prefHeight="560.0" prefWidth="955.0" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/Medicine.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="84.0" layoutY="32.0" text="Medicines">
+                  <Label layoutX="84.0" layoutY="32.0" text="Category">
                      <font>
                         <Font name="Bell MT Bold" size="30.0" />
                      </font>
                   </Label>
-                  <Label layoutX="86.0" layoutY="62.0" text="Manage Medicines">
+                  <Label layoutX="86.0" layoutY="62.0" text="Manage Category">
                      <font>
                         <Font name="Bell MT Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Medicines" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Category" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddMedicine" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Add Medicines" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
-               <font>
-                  <Font name="Bell MT Bold" size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/add.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             <AnchorPane layoutY="120.0" prefHeight="440.0" prefWidth="955.0" style="-fx-background-color: #e0e0e0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
                <children>
                   <TableView layoutY="34.0" prefHeight="400.0" prefWidth="955.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                    </columns>
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="C1" />
+                        <TableColumn prefWidth="75.0" text="C2" />
+                     </columns>
                   </TableView>
-                  <Label layoutX="25.0" layoutY="6.0" prefHeight="40.0" prefWidth="200.0" text="List of Medicines" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Label layoutX="25.0" layoutY="6.0" prefHeight="40.0" prefWidth="200.0" text="Catagories" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <font>
                         <Font name="Bell MT Bold" size="24.0" />
                      </font>
@@ -77,7 +65,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button layoutX="157.0" layoutY="90.0" mnemonicParsing="false" onAction="#ManageCategory" prefHeight="30.0" prefWidth="165.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Catagory">
+            <Button layoutY="90.0" mnemonicParsing="false" onAction="#ManageMedicine" prefHeight="30.0" prefWidth="165.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Manage Medicine">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>
@@ -89,7 +77,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="329.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Add Catagory">
+            <Button layoutX="172.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Add Catagory">
                <font>
                   <Font name="Bell MT Bold" size="14.0" />
                </font>

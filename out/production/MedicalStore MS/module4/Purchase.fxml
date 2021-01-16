@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module4.Purchase_Controller">
-   <children>
-      <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module4.Purchase_Controller">
+   <center>
+      <AnchorPane prefHeight="560.0" prefWidth="955.0">
          <children>
-            <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/Manage.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="84.0" layoutY="32.0" text="Purchase">
+            <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="63.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Purchase.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="32.0" text="Purchase">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="62.0" text="Manage Purchase">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Purchase" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutY="90.0" mnemonicParsing="false" onAction="#AddPurchase" prefHeight="30.0" prefWidth="150.0" styleClass="button_medicien" stylesheets="@../stylesheet/Pane_Button.css" text="Add Purchase" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
                <font>
-                  <Font name="Bell MT Bold" size="30.0" />
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutY="120.0" prefHeight="40.0" prefWidth="955.0" text="List of Purchase" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="86.0" layoutY="62.0" text="Manage Purchase">
-               <font>
-                  <Font name="Bell MT Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Purchase" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
+            <TableView layoutX="6.0" layoutY="160.0" prefHeight="401.0" prefWidth="955.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button layoutX="835.0" layoutY="125.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" styleClass="button_export" stylesheets="@../stylesheet/Pane_Button.css" text="Export PDF" AnchorPane.rightAnchor="0.33333333333337123" AnchorPane.topAnchor="130.0" />
          </children>
       </AnchorPane>
-   </children>
-</AnchorPane>
+   </center>
+</BorderPane>

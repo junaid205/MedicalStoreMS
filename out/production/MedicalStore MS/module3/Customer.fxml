@@ -1,36 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module3.Customer_Controller">
-   <children>
-      <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<BorderPane fx:id="AllView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module3.Customer_Controller">
+   <center>
+      <AnchorPane prefHeight="560.0" prefWidth="955.0">
          <children>
-            <ImageView fitHeight="81.0" fitWidth="97.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/Manage.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="84.0" layoutY="32.0" text="Customer">
+            <AnchorPane prefHeight="90.0" prefWidth="796.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Customer.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="32.0" text="Customer">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="62.0" text="Manage Customer">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Customer" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox layoutX="7.0" layoutY="90.0" prefHeight="30.0" prefWidth="955.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AddCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Add Customer" textFill="#fff600">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#CustomerLedger" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Customer Ledger" textFill="#fff600">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="165.0" layoutY="10.0" mnemonicParsing="false" onAction="#CreditCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Credit Customer" textFill="#fff600">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="321.0" layoutY="10.0" mnemonicParsing="false" onAction="#PaidCustomer" prefHeight="30.0" prefWidth="150.0" styleClass="button_customer" stylesheets="@../stylesheet/Pane_Button.css" text="Paid Customer" textFill="#fff600">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutY="120.0" prefHeight="40.0" prefWidth="955.0" text="List of Customers" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0">
                <font>
-                  <Font name="Bell MT Bold" size="30.0" />
+                  <Font name="Bell MT Bold" size="36.0" />
                </font>
             </Label>
-            <Label layoutX="86.0" layoutY="62.0" text="Manage Customer">
+            <TableView layoutY="164.0" prefHeight="397.0" prefWidth="955.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="164.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button layoutX="766.0" layoutY="131.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="button_export" stylesheets="@../stylesheet/Pane_Button.css" text="Export PDF" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
                <font>
-                  <Font name="Bell MT Bold" size="16.0" />
+                  <Font name="Bell MT Bold" size="14.0" />
                </font>
-            </Label>
-            <Label layoutX="830.6666666666667" layoutY="68.0" text="Home / Customer" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="68.0">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
+            </Button>
          </children>
       </AnchorPane>
-   </children>
-</AnchorPane>
+   </center>
+</BorderPane>
