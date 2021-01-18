@@ -190,7 +190,7 @@
             </AnchorPane>
             <HBox layoutY="95.0" prefHeight="130.0" prefWidth="950.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="95.0">
                <children>
-                  <AnchorPane prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
+                  <AnchorPane onMouseClicked="#TotalMedicine" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #37CCCB; -fx-background-radius: 5;" styleClass="pane1" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
@@ -209,7 +209,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6B9B4E; -fx-background-radius: 5;" styleClass="pane2" stylesheets="@../stylesheet/Pane_Button.css">
+                  <AnchorPane layoutX="10.0" layoutY="10.0" onMouseClicked="#TotalCustomer" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6B9B4E; -fx-background-radius: 5;" styleClass="pane2" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="002" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
@@ -228,7 +228,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="220.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F3CE54; -fx-background-radius: 5;" styleClass="pane3" stylesheets="@../stylesheet/Pane_Button.css">
+                  <AnchorPane layoutX="220.0" layoutY="10.0" onMouseClicked="#OutOfStock" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F3CE54; -fx-background-radius: 5;" styleClass="pane3" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="003" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
@@ -247,7 +247,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="430.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F28E80; -fx-background-radius: 5;" styleClass="pane4" stylesheets="@../stylesheet/Pane_Button.css">
+                  <AnchorPane layoutX="430.0" layoutY="10.0" onMouseClicked="#Expired" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #F28E80; -fx-background-radius: 5;" styleClass="pane4" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="004" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
@@ -266,7 +266,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="640.0" layoutY="10.0" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6FAAC1; -fx-background-radius: 5;" styleClass="pane6" stylesheets="@../stylesheet/Pane_Button.css">
+                  <AnchorPane layoutX="640.0" layoutY="10.0" onMouseClicked="#Invoice" prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: #6FAAC1; -fx-background-radius: 5;" styleClass="pane6" stylesheets="@../stylesheet/Pane_Button.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutY="25.0" prefHeight="30.0" prefWidth="160.0" text="005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                            <font>
